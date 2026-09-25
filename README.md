@@ -4,12 +4,13 @@ Template LaTeX para teses de doutoramento em Ciência Política,
 especialidade em Política Comparada, do Instituto de Ciências Sociais da
 Universidade de Lisboa.
 
-> **Este template não é oficial.** Mas pode ser útil a doutorandos em Política Comparada. Implementa as regras de estilo publicadas em
-> <https://www.ics.ulisboa.pt/trabalho-final>, mas a responsabilidade pela
-> conformidade do documento entregue é de quem o entrega. Em caso de
-> divergência entre este template e o regulamento, é o regulamento que
-> vale. Verifiquem  a versão em vigor das regras: foram actualizadas
-> pela última vez em **Setembro de 2026**.
+> **Este template não é oficial**, mas pode ser útil a doutorandos em
+> Política Comparada. Implementa as regras de estilo publicadas em
+> <https://www.ics.ulisboa.pt/trabalho-final>, embora a responsabilidade
+> pela conformidade do documento entregue seja de quem o entrega. Em caso
+> de divergência entre este template e o regulamento, é o regulamento que
+> vale. Verifique a versão em vigor das regras: foram atualizadas pela
+> última vez em **setembro de 2026**.
 
 ---
 
@@ -20,7 +21,7 @@ Universidade de Lisboa.
 1. Descarregue este repositório como ZIP e faça *New Project → Upload
    Project* no Overleaf.
 2. Carregue em *Recompile*. O template precisa de XeLaTeX, por causa das
-   fontes, mas não precisa de mudar nada: o Overleaf abre os projetos com
+   fontes, mas não é preciso mudar nada: o Overleaf abre os projetos com
    pdfLaTeX e o `latexmkrc` incluído chama o XeLaTeX no lugar dele. Se
    apagar o `latexmkrc`, mude o compilador à mão em *Menu → Compiler →
    XeLaTeX*.
@@ -38,11 +39,10 @@ latexmk -xelatex main.tex
 ```
 
 O `latexmkrc` incluído já configura XeLaTeX e biber, também quando se
-corre `latexmk -pdf`. Precisa de uma
-distribuição TeX completa (TeX Live 2023 ou posterior). Numa instalação
-mínima (BasicTeX, TinyTeX), instale também os pacotes que a classe usa,
-entre os quais `biblatex-apa`, `siunitx`, `pgfplots`, `tex-gyre`,
-`carlito` e `lato`.
+corre `latexmk -pdf`. Precisa de uma distribuição TeX completa (TeX Live
+2023 ou posterior). Numa instalação mínima (BasicTeX, TinyTeX), instale
+também os pacotes que a classe usa, entre os quais `biblatex-apa`,
+`siunitx`, `pgfplots`, `tex-gyre`, `carlito` e `lato`.
 
 ---
 
@@ -75,7 +75,6 @@ caracteres. O aviso aparece no *log*, não no documento.
 | Times New Roman | TeX Gyre Termes |
 | Arial | TeX Gyre Heros |
 | Calibri | Carlito |
-
 
 A capa e a folha de rosto usam Lato, que vem com o TeX Live e o Overleaf.
 
@@ -174,7 +173,7 @@ Comandos que a classe acrescenta:
 
 ## O que tem de fazer
 
-**Substituir os marcadores.** Todo o texto entre parênteses rectos —
+**Substituir os marcadores.** Todo o texto entre parênteses retos —
 `[Title]`, `[Full name]`, `[Position, institution]` — é para substituir.
 Comece por `Variables/Variables.tex`, depois percorra os ficheiros de
 `Matter/`.
@@ -243,18 +242,18 @@ obrigatório quando a tese é escrita noutra língua.
 
 Distribuído sob a **LaTeX Project Public License, versão 1.3c** ou
 posterior. O texto da licença está em `LICENSE`; os direitos de autor, o
-estado de manutenção e a nota de derivação estão em `NOTICE`. Os logótipos da ULisboa e do ICS em
-`Figures/Theme/` são marcas dos seus titulares e não estão abrangidos pela
-licença.
+estado de manutenção e a nota de derivação estão em `NOTICE`. Os
+logótipos da ULisboa e do ICS em `Figures/Theme/` são marcas dos seus
+titulares e não estão abrangidos pela licença.
 
 Esta classe é um derivado substancialmente modificado do template
 **IPLeiria Thesis** v2.1.0, de José António Portela Areia
-(<https://github.com/joseareia/ipleiria-thesis>), também sob LPPL-1.3c. Como
-a licença exige, o ficheiro de classe foi renomeado e a autoria original é
-mantida no cabeçalho de `icsthesis.cls` e em `NOTICE`; os exemplos de quadros adaptados
-do tutorial original estão assinalados no cabeçalho de
-`Examples/00-How-To-Use.tex`. O autor original não é responsável por este
-derivado nem o subscreve.
+(<https://github.com/joseareia/ipleiria-thesis>), também sob LPPL-1.3c.
+Como a licença exige, o ficheiro de classe foi renomeado e a autoria
+original é mantida no cabeçalho de `icsthesis.cls` e em `NOTICE`; os
+exemplos de quadros adaptados do tutorial original estão assinalados no
+cabeçalho de `Examples/00-How-To-Use.tex`. O autor original não é
+responsável por este derivado nem o subscreve.
 
 Se este template lhe for útil, um *issue* ou um *pull request* com
-correcções é bem-vindo — sobretudo se o regulamento do ICS mudar.
+correções é bem-vindo — sobretudo se o regulamento do ICS mudar.
