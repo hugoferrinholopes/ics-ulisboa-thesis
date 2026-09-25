@@ -1,0 +1,78 @@
+% ==============================================
+% PhD thesis - Comparative Politics - ICS-ULisboa
+% ==============================================
+
+\documentclass[en,articles,provisional,times,12pt]{icsthesis}
+% Uncomment if writing a traditional monograph:
+%\documentclass[en,monograph,provisional,times,12pt]{icsthesis}
+
+
+
+\input{Variables/Variables}
+\addbibresource{Bibliography/references.bib}
+
+% Optional running head with the short title
+% \shorttitleheader{\shortname}
+
+\begin{document}
+
+% =============================================
+% FRONT MATTER
+% =============================================
+\pagenumbering{roman}
+
+\include{Matter/00-Cover}
+
+% Swap the two lines below after the viva.
+\include{Matter/01-TitlePage}
+% \include{Matter/02-TitlePage-PostViva}
+
+\include{Matter/03-Dedication}
+\include{Matter/04-Acknowledgements}
+%\include{Matter/05-Funding} %uncomment if you need to state it beyond the front matter
+\include{Matter/06-Abstract}
+\include{Matter/07-Resumo}
+
+% Comment this line out if you write in Portuguese.
+\include{Matter/08-ResumoAlargado}
+
+% Table of contents
+{\setstretch{1}
+  \icsnextodd % to begin in an odd page\pdfbookmark[0]{\contentsname}{contents}\tableofcontents
+  \icsnextodd % to begin in an odd page\listoffigures
+  \icsnextodd % to begin in an odd page\listoftables
+}
+
+\include{Matter/09-Acronyms}
+
+% =============================================
+% BODY
+% =============================================
+\icsnextodd % to begin in an odd page
+\pagenumbering{arabic}
+
+\include{Chapters/01-Introduction}
+\include{Chapters/02-Study-One}
+\include{Chapters/03-Study-Two}
+\include{Chapters/04-Conclusion}
+
+% =============================================
+% EXAMPLES
+% =============================================
+\include{Examples/00-How-To-Use}
+
+% =============================================
+% REFERENCES 
+% =============================================
+\icsnextodd % to begin in an odd page
+\printbibliography[heading=bibintoc]
+
+% =============================================
+% APPENDICES 
+% =============================================
+\icsnextodd % to begin in an odd page
+\appendix
+\include{Chapters/Appendix-A}
+\include{Chapters/Appendix-B}
+
+\end{document}

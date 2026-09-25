@@ -1,0 +1,37 @@
+Copyright (C) 2026 Hugo Ferrinho Lopes
+
+This work consists of the file icsthesis.cls and the supporting files
+distributed with it (main.tex, latexmkrc, and the contents of the
+Variables/, Matter/, Chapters/, Examples/, Bibliography/ and Figures/
+directories).
+
+The ULisboa and ICS-ULisboa logos in Figures/Theme/ are trademarks of
+their owners. They are included only so that the cover reproduces the
+official model, and they are not covered by this license.
+
+This work may be distributed and/or modified under the conditions of the
+LaTeX Project Public License, either version 1.3c of this license or (at
+your option) any later version. The latest version of this license is at:
+
+    https://www.latex-project.org/lppl.txt
+
+This work has the LPPL maintenance status "maintained".
+The Current Maintainer of this work is Hugo Ferrinho Lopes.
+
+--------------------------------------------------------------------------
+DERIVATION NOTICE
+
+icsthesis.cls is a substantially modified derivative of the "IPLeiria
+Thesis" class, version 2.1.0 (2024/12/06), by Jose Antonio Portela Areia
+<jose.apareia@gmail.com>, https://github.com/joseareia/ipleiria-thesis,
+distributed under the LPPL version 1.3c.
+
+As the LPPL requires of derived works, the file name has been changed from
+IPLeiriaThesis.cls to icsthesis.cls, the modifications are identified in
+the header of that file, and the original author's notice is preserved.
+The original author is not responsible for, and does not endorse, this
+derivative.
+--------------------------------------------------------------------------
+
+The full text of the LaTeX Project Public License, version 1.3c, is in
+the file LICENSE.

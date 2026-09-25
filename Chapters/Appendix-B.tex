@@ -1,0 +1,26 @@
+% =========================================================================
+% APPENDIX B
+% =========================================================================
+
+\chapter{Second Appendix Title}
+\label{app:b}
+
+\blindtext
+
+\section{Section Title}
+\label{sec:appendix-b-01}
+
+Code listings use the \texttt{listings} package, which needs no
+shell-escape and therefore compiles on Overleaf without changing any
+setting.
+
+\begin{lstlisting}[language=R, caption={A code listing.}, label=lst:code-01]
+library(fixest)
+
+m1 <- feols(y ~ x + z | group, cluster = ~group, data = df)
+
+etable(m1, tex = TRUE, file = "Figures/table-01.tex")
+\end{lstlisting}
+
+Writing estimation output straight to \texttt{Figures/} as a \texttt{.tex}
+file, as the last line does, keeps the thesis and the analysis in sync.

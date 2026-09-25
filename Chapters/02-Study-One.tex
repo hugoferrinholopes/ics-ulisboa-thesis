@@ -1,0 +1,43 @@
+% =========================================================================
+% STUDY ONE
+% =========================================================================
+
+\chapter{Chapter Title}
+\label{ch:study-one}
+
+% In 'articles' format, declare co-authorship and publication status at the
+% head of each study. In 'monograph' format the command is ignored, so the
+% same file compiles either way.
+\studynote{[Co-authorship and publication status of this study.]}
+
+\chapterabstract{[Abstract of this individual study, if the thesis gives
+each study its own.]}
+
+\blindtext
+
+\section{Section Title}
+\label{sec:study-one-01}
+
+\blindtext[2]
+
+\subsection{Subsection Title}
+\label{subsec:study-one-01}
+
+Footnotes are set one point smaller than the body text, single spaced, with
+a 0.4 cm hanging indent from the second line.\footnote{\blindtext[1]}
+
+\blindtext
+
+\section{Second Section Title}
+\label{sec:study-one-02}
+
+An equation, numbered and referenced as \Cref{eq:example}:
+
+\begin{equation}
+  y_{ij} = \alpha + \beta x_{ij}
+           + \mathbf{Z}_{ij}^{\prime}\boldsymbol{\gamma}
+           + \delta_j + \varepsilon_{ij}.
+  \label{eq:example}
+\end{equation}
+
+\blindtext

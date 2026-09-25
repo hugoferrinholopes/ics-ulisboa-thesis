@@ -1,0 +1,79 @@
+% ==============================================
+% COVER  (capa)
+% Follows the official ICS-ULisboa model for the Comparative Politics PhD.
+% ==============================================
+{\setstretch{1}
+
+\newgeometry{margin=2cm, top=2.15cm, bottom=2cm}
+\begin{titlepage}
+  \iflangpt{\pdfbookmark[0]{Capa}{capa}}{\pdfbookmark[0]{Cover}{cover}}
+  \coverfont
+  \color{icscover}
+  \vspace*{\baselineskip}
+
+  % ---- Institutional logo ------------------
+  \noindent\includegraphics[width=0.62\linewidth]{\icslogo}
+
+  \vspace{3.5\baselineskip}
+
+  % ---- Title -------------------------------
+  \noindent\makebox[\textwidth][l]{%
+    \parbox{\dimexpr\textwidth-2.5cm\relax}{%
+      \setstretch{1.03}\raggedright\bfseries\fontsize{30}{36}\selectfont
+      \thetitle}}
+
+  \vspace{0.8\baselineskip}
+
+  % ---- Subtitle ----------------------------
+  \noindent\makebox[\textwidth][l]{%
+    \parbox{\dimexpr\textwidth-4cm\relax}{%
+      \setstretch{1.03}\raggedright\fontsize{16}{21}\selectfont
+      \subname}}
+
+  \vspace{35pt}
+
+  % ---- Candidate --------------------------
+  {\noindent\bfseries\fontsize{16}{21}\selectfont\candidatename}
+
+  \vfill
+
+  % ---- Supervisors ------------------------
+  {\noindent\fontsize{11}{13}\selectfont\setstretch{1}%
+   \renewcommand{\arraystretch}{1}%
+   \begin{tabular}{@{}r@{\hspace{10pt}}>{\raggedright\arraybackslash}p{9cm}@{}}
+     \textbf{\iflangpt{Orientação:}{Supervisors:}} & \supname \\[-0.2ex]
+       & {\fontsize{8.5}{10.5}\selectfont\itshape\suptitle} \\[1.6ex]
+     \ifdefined\cosupname
+       & \cosupname \\[-0.2ex]
+       & {\fontsize{8.5}{10.5}\selectfont\itshape\cosuptitle} \\[1.6ex]
+     \fi
+     \ifdefined\seccosupname
+       & \seccosupname \\[-0.2ex]
+       & {\fontsize{8.5}{10.5}\selectfont\itshape\seccosuptitle} \\
+     \fi
+   \end{tabular}}
+
+  \vfill
+
+  % ---- Degree --------------------------
+  {\noindent\fontsize{11}{13}\selectfont\degname}
+
+  \vspace{6pt}
+
+  % ---- Course formula ------------------
+  {\noindent\fontsize{10}{12}\selectfont
+   \parbox{\dimexpr\textwidth-4cm\relax}{\itshape\coursename}}
+
+  \vfill
+
+  % ---- Institution and date ---------------
+  {\noindent\fontsize{10}{12}\selectfont\instname}
+
+  {\noindent\fontsize{10}{12}\selectfont\univname}
+
+  {\noindent\fontsize{10}{12}\selectfont\thedate}
+
+  \vspace{45pt}
+\end{titlepage}
+\restoregeometry
+}

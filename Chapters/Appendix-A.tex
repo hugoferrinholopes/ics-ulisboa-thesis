@@ -1,0 +1,35 @@
+% ==============================================
+% APPENDIX A ===============================================
+
+\chapter{Appendix Title}
+\label{app:a}
+
+Appendices are lettered automatically once \verb|\appendix| has been
+declared in \texttt{main.tex}. Tables and figures placed here are numbered
+in the same sequence as the rest of the document and appear in the same
+lists.
+
+\blindtext
+
+\begin{table}[!htpb]
+  \caption{A table in an appendix.}
+  \label{tab:appendix-01}
+  \centering
+  \begin{tabular}{l
+                  S[table-format=-1.3, table-space-text-pre=(, table-space-text-post=)]
+                  S[table-format=-1.3, table-space-text-pre=(, table-space-text-post=)]}
+    \toprule
+    \textbf{Header 01} & {\textbf{Header 02}} & {\textbf{Header 03}} \\
+    \midrule
+    Lorem Ipsum       & -0.213  & -0.198  \\
+                      & (0.036) & (0.041) \\
+    Dolor Sit         &  0.048  &  0.051  \\
+                      & (0.019) & (0.020) \\
+    Amet Consectetuer & {--}    &  0.137  \\
+                      &         & (0.058) \\
+    \midrule
+    Fixed effects     & {Yes}   & {Yes}   \\
+    Observations      & {\num{2431}} & {\num{2398}} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
