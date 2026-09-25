@@ -1,0 +1,33 @@
+## LaTeX build artefacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+*.nav
+*.snm
+*.vrb
+
+## Output. Uncomment the next line if you would rather not version the PDF.
+## Keeping it versioned is useful: supervisors can read the current draft
+## straight from GitHub without compiling anything.
+# main.pdf
+
+## Editor and OS noise
+.vscode/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+## Overleaf sync leftovers
+*.bak
